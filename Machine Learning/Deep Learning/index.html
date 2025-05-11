@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deep Learning</title>
+    </head>
+    <body>
+        <h1>Deep Learning</h1>
+        <h2>History</h2>
+        <p>IBM's DeepBlue machine defeated world chess champion Garry Kasparov in 1997. However, the chess world is rather small.</p>
+        <p>Knowledge was first hard coded using formal language with logical inference rules. This was known as <b>knowledge based</b> approach.</p>
+        <p>Then <b>Machine Learning</b> was developed to have the capacity to extract patterns from raw data, automating the need to actually hard code the knowledge base. 
+            E.g. We could use <b>Logistic Regression</b> to determine whether we should use cesarean delivery or not, <b>naive Bayes</b> to classify mail as spam or not, etc.
+        </p>
+        <p>With this the <b>Representation</b> of data also hold a significance. The data which is used to train the model using Machine learning alogirthms have attributes called <b>features</b></p>
+        <p>Finding proper representation of data is sometimes time consuming, so people came with the idea of using ML to find good set of features. This is known as <b>Representation Learning</b>. 
+            <br />E.g. <b>Autoencoders</b> which consists of <b>encoders</b> and <b>decoders </b>are used to find good representation of data.    
+        </p>
+        <p><b>Factors of Variation</b> are the features which explains the data and influences the output.</p>
+        <h2>Applications</h2>
+        <p>The main motive for Deep Learning is to build systems which support humans by either supporting existing human capabilities or providing new capabilities.</p>
+        <ul>
+            <li>Spam Detection</li>
+            <li>Information Retrieval</li>
+            <li>Recognition
+                <ul>
+                    <li>Face</li>
+                    <li>Speech</li>
+                    <li>Fraud</li>
+                </ul>
+            </li>
+            <li>Robotics
+                <ul>
+                    <li>Self Driving Vehicles</li>
+                    <li>Medical Surgery</li>
+                    <li>Manufacturing</li>
+                </ul>
+            </li>
+            <li>Advertising</li>
+            <li>Recommendation Systems</li>
+            <li>Home Virtual Assistants</li>
+        </ul>
+        <h3>Binary Classification Applications</h3>
+        <p>The primary objective of binary classification is to distinguish the data into 2 classes. Following are the applications:</p>
+        <ol>
+            <li>Spam Detection</li>
+            <li>Resume Pre-Screening</li>
+            <li>Cancer Diagnosis</li>
+            <li>Cognitive Impairment Recognition by Apple App Usage</li>
+            <li>Sentiment Analysis</li>
+            <li>Food Quality Control</li>
+        </ol>
+        <h3>Steps Involved in Building Deep Learning Models</h3>
+        <p><b>Goal: </b> Design Models that generalise well to new, previously unseen data
+            <br /><b>Step 1:</b> Split the data into a "training set" and a "test set"
+            <br /><b>Step 2:</b> Train the model on "training set" to try to minimize prediction error on it.
+            <br /><b>Step 3:</b> Apply the trained model on "test set" to measure the generalization error.
+        </p>
+
+        <h3>Evaluating Classification Models: Confusion Matrix</h3>
+        <p>A confusion matrix or a contigency table or an error matrix consists of rows and columns with the predicted and actual numbers as shown.</p>
+        <table style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td></td>
+                <td>Actual Positive</td>
+                <td>Actual Negative</td>
+            </tr>
+            <tr>
+                <td>Predicted Positive</td>
+                <td style="border: 1px solid black;">TP</td>
+                <td style="border: 1px solid black;">FP</td>
+            </tr>
+            <tr>
+                <td>Predicted Negative</td>
+                <td style="border: 1px solid black;">FN</td>
+                <td style="border: 1px solid black;">TN</td>
+            </tr>
+        </table>
+        <p>
+            Where TP = True Positive, FP = False Positive, FN = False Negative, TN = True Negative
+        </p>
+        <h4>Accuracy = <sup>TP+TN</sup>&frasl;<sub>TP+FP+FN+TN</sub></h4>
+        <h4>Precision = <sup>TP</sup>&frasl;<sub>TP+FP</sub></h4>
+        <h4>Recall = <sup>TP</sup>&frasl;<sub>TP+FN</sub></h4>
+        <h4>F1 Score = <sup>2*Precision*Recall</sup>&frasl;<sub>Precision+Recall</sub></h4>
+        For email detection it's better to use Precision whereas in cancer detection it's better to use Recall.
+
+        <h3>Biological neurons: Inspiration</h3>
+        <p>
+            The main inspiration came from the animal's computing machinery. 
+            <br /><b>Neuron: </b> The basic unit in the nervous system for receiving, processing and transmitting information. e.g. messages such as "hot", "loud", "spicy".
+            <br />A nematode has 302 neurons, whereas a human has around 100 billion neurons.       
+        </p>
+        <ul>
+            <li>When the input signals exceed a certain threshold within a short period of time, a neuron <b>"fires"</b></li>
+            <li>Neuron <b>"firing"</b> is an <b>"all-or-none"</b> process where either a signal is sent or nothing happens.</li>
+        </ul>
+
+        <h3>Convolutional Neural Network : <a href="CNN.html">click here</a></h3>
+    </body>
+</html>

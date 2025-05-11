@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Computer Vision
+        </title>
+    </head>
+    <body>
+        <h1>Computer Vision</h1>
+        <p>
+            Computer Vision is to automatically make the computer understand images and videos.
+            <ul>
+                <li>Computing properties of the 3D world from visual data <b>(measurement)</b></li>
+                <li>Algorithms and representations allow a machine to recognise objects, people, scenes and activities <b>(Perception and Interpretation)</b></li>
+                <li>Algorithms to mine, search and interact with visual data <b>(Search and Organization)</b></li>
+            </ul>
+        </p>
+        <p>Jitendra Malik, UC Berkeley, gave three <b>R's</b> of computer vision. "The classical problems of computational vision: recontruction, recognition and reorganisation.
+            <ul>
+                <li><b>Reconstruction</b> involves the recover of <b>three-dimensional geometry</b> from images. More boradly it can be interpreted as <b>"inverse graphics"</b>. Extimating shape, reflectance, spatial layout and illumination</li>
+                <li><b>Recognition</b> refers to the prcoess of attaching semantic category labels to objects, scenes, events and activities in images.</li>
+                <li><b>Reorgranisation</b> refers to grouping/segmentation of visual elements. It is the computer vision analog of perpetual organization from Gestalt psychology. </li>
+            </ul>   
+            <br />Computer Vision is the capability of computers to perceive the natural world and extract information from it.  
+            <br />To move within it, to recognise and classify, and to make decisions upon that information and act.
+        </p>
+        <h3>History</h3>
+        <p>
+            <ul>
+                <li><b>1966: Minsky</b> assigns computer vision as a summer undergrad project 
+                    <br />An unlucky intern at MIT AI's lab was assigned "computer vision" as a summer project.
+                    <br />It turned out not to be so easy - even now academicis stuggle to make eye robots. 
+                    Yet in the past 10 years we have seen significant progress and computer vision systems are functional and 
+                    deployable to masses - sometimes for better sometimes for worse.
+                </li>
+                <li><b>1970s: </b>Some progress on interpreting selected images</li>
+                <li><b>1980s: ANNs </b>come and go. Shift towards geometry and mathematical rigor.</li>
+                <li><b>1990s: </b>Face recognition; statistical analysis in vogue.</li>
+                <li><b>200s: </b>Broader recognition, large annotated datasets available, video processing starts.</li>
+                <li><b>2010s: </b>Deep Learning with ConvNets</li>
+                <li><b>2020s: </b>Vision Transformers</li>
+            </ul>
+        </p>
+        <h3>Challenges</h3>
+            <p>There are some obstacles that come in the way of computer vision, let's name a few
+            <ul>
+                <li>Illumination - Brightness</li>
+                <li>Object Pose</li>
+                <li>Clutter - Main subject</li>
+                <li>Occlusion - A Blockage</li>
+                <li>Intra Class Appearance - Variation</li>
+                <li>Viewpoint</li>
+            </ul>
+            </p>
+
+        <h3>Applications</h3>
+        <p>Following are the areas where we can use Computer Vision: 
+            <ul>
+                <li>Robotics</li>
+                <li>Classification</li>
+                <li>Image Captioning</li>
+                <li>Visual Q&A</li>
+                <li>Text to Image Synthesis</li>
+            </ul>
+            The following are the real life application examples:   VFX in "Rise of the Planet of Apes" - 2011, Amazon Go - Cashier less supermarket with 100s of cameras, Chandrayaan - 3,
+            Virtual Earth, Hawk-Eye
+            For a detailed use cases <a href="applications.html">visit this page</a>
+        </p>
+        <p>Computer Graphics and Computer Vision are inverse of each other</p>
+
+        <h3>Future Ahead</h3>
+        <ul>
+            <li>Derogatory current summary of computer vision: Machine learning applied to visual data.</li>
+            <li>Deep Learning is an enormous disruption to the field. Since 2012, rapid expansion and commercialization. Why?</li>
+            <li>Reckless statement "With enough data, computer vision matches or even outperforms human vision at most recognition tasks."</li>
+            <li>Whats MISSING?..."world-sense"</li>
+            <li>Lots of data = lots of potential bias in the data.</li>
+            <li>Needs understanding of possible failures + Responsible approach + Techniques to overcome bias</li>
+        </ul>
+
+        <h2>Color and Light</h2>
+        <p>
+            Each pixels records energy in blue light, green light and red light
+        </p>
+            <h3>Basic Models of reflection</h3>
+            <ul>
+                <li></li>
+            </ul>
+
+
+        <h2>Image</h2>
+        <h3>What is an Image?</h3>
+        <p>
+            <b>Signal: </b>A (multi-dimensional) function that contains information about a phenomenon. 
+            <br />Signals can be
+            <ul>
+                <li><u>Continuous</u>: Light</li>
+                <li><u>Discrete</u>: Measurement of a Light</li>
+                <li><u>Sampling</u>: Reduction of a continuous signal to a discete signal</li>
+            </ul>
+            <br />Any phenomenon: light, heat, gravity and so on. 
+            <br />A 2D image is a sampling of a 2D signal. Note that the 2D signal can also be projection (or slice) of a higher dimensional signal like in MRI or CT scans.
+            <br />Image stores intensity or "brightness" along x and y dimension.
+            <br />Video: xy-coordinates + time (Time varying 2D signal)
+            <br />Image is formed by the eyes or CMOS sensor.
+            <br />Images are 2D array of intensities for computers. 
+        </p>
+        <h4>Epitome</h4>
+        <p>
+            <ul>
+                <li>Natural images are not arbitrary 2D arrays</li>
+                <li>Edge detection: 
+                    <ul>
+                        <li>Cue to object Boundary</li>
+                        <li>Cue to shape</li>
+                        <li>More resilient to lighting than pixel color</li>
+                    </ul>
+                </li>
+                <li>Zooming into or out of images</li>
+                <ul>
+                    <li>Searching for both nearby and far off objects</li>
+                </ul>
+                <li>Matching patches from two different images</li>
+                <ul>
+                    <li>First step in identifying 3D locations.</li>
+                </ul>
+                <li>Solving computer vision requires using these properties.</li>
+            </ul>
+        </p>
+
+    </body>
+</html>
